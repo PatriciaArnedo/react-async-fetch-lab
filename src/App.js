@@ -14,7 +14,7 @@ class App extends React.Component {
     }
     
     render(){
-        let people = this.state.peopleInSpace.map(person => <h1>{person.name}</h1>)
+        let people = this.state.peopleInSpace.map((person, id) => <h1 key={id} >{person.name}</h1>)
         console.log(people)    
         return (
             <div>
